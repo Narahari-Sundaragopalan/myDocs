@@ -14,24 +14,34 @@ vagrant box add laravel/homestead
 
 * Install Homestead using below command
 
-```git clone https://github.com/laravel/homestead.git ~/Homestead```
+```
+git clone https://github.com/laravel/homestead.git ~/Homestead
+```
 
 
 * This will clone the homestead directory in your home folder
 
 * Navigate to the Homestead directory using
 
-```cd ~/Homestead```
+```
+cd ~/Homestead
+```
 
 * As mentioned in the Laravel Page, checkout the correct version of Homestead branch by executing the below command.
 
-```git checkout v7.3.0```
+```
+git checkout v7.3.0
+```
 
 * From the command line terminal window, run the below command from the Homestead directory.
 
-```bash init.sh```  (for Mac or Linux)  
+```
+bash init.sh  (For Mac or Linux)
+```  
 
-```init.bat``` (for Windows)
+```
+init.bat  (For Windows)
+```
 
 * This creates the ```Homestead.yaml``` file. Its a configuration file for the Homestead box
 
@@ -39,11 +49,15 @@ vagrant box add laravel/homestead
 
 * From the command line run the command  from the Homestead folder, to bring up the vagrant box.
 
-```vagrant up```
+```
+vagrant up
+```
 
 * And then SSH into the vagrant homestead box using the below command.
 
-```vagrant ssh```.
+```
+vagrant ssh
+```
 
 This will log you into the vagrant machine containing the homestead box.
 
@@ -146,7 +160,9 @@ from your terminal on the local machine.
 
 * Log into the vagrant machine again using the below command.
 
-```vagrant ssh```
+```
+vagrant ssh
+```
 
 * You should now be able to see your cloned repository inside the vagrant machine.
 
@@ -213,7 +229,9 @@ composer update
 
 * From the top menu bar, go to
 
-```View > Tool Windows > Database```
+```
+View > Tool Windows > Database
+```
 
 The database will show up on the right hand side.
 
