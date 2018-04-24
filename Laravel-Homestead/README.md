@@ -225,6 +225,12 @@ composer update
 
 * Once this is completed, go to your browser, and type the name of the the application, ```mavbasic.test``` in this example, to access the application on your local machine.
 
+* Run the following command to migrate the basic tables which comes with the mavbasic app. From your vagrant box, from the root folder of your code repository.
+
+```
+php artisan migrate
+```
+
 * One additional useful feature, is that we can configure our local database within PHPStorm.
 
 * From the top menu bar, go to
