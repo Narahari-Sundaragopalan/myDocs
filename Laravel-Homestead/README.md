@@ -45,6 +45,12 @@ init.bat  (For Windows)
 
 * This creates the ```Homestead.yaml``` file. Its a configuration file for the Homestead box
 
+* If this is the first time, installing a virtual machine, you might have to create a ssh keygen for the Homestead.yaml file to check authorization. Run the below command and accept the defaults
+
+```
+ssh-keygen -t rsa -b 4096 -C "<your_email@email-Client.com>"
+```
+
 * At this point, you can check if your homestead box is up and running.
 
 * From the command line run the command  from the Homestead folder, to bring up the vagrant box.
