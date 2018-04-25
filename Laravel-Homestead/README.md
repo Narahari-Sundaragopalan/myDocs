@@ -180,12 +180,6 @@ vagrant ssh
 
 * Rename the default ```.env.example``` file to ```.env```
 
-* From the terminal inside your vagrant machine, generate a new key using the below command
-
-```
-php artisan key:generate
-```
-
 * To configure the local database and connect it to the database created by Homestead box, make sure you add the below configuration in the ```.env``` file
 
 ```
@@ -200,6 +194,18 @@ DB_PASSWORD=secret
 * The username and password are default created by Homestead box for the database.
 
 * Using PostgreSQL is better than mySQL, as we will be deploying in Heroku and use PostgreSQL services. This will ensure our local environment is similar to the hosted environment.
+
+* Go to the terminal in your vagrant box and navigate to the location where you cloned the repository and run the below command. This will install all the packages required to run the application.
+
+```
+composer update
+```
+
+* From the terminal inside your vagrant machine, generate a new key using the below command
+
+```
+php artisan key:generate
+```
 
 #### Update Hosts file.
 
@@ -218,16 +224,6 @@ C:\Windows\System32\Drivers\etc\hosts  (Windows)
 ```
 
 * The application name here should be the same as the one mentioned in  in the ```sites``` section of your ```Homestead.yaml``` file.
-
-> Due to some recent changes in the Google Chrome browser, this feature has sometimes not worked properly. It has required to change the application name to ```.test``` instead of ```.app```.
-
-> In case the browser complaints about insecure connection, when you access the application, go ahead and click on "Advanced" and "Proceed" to the page. If "mavbasic.test" does not work, try "mavbasic.dev"
-
-* Go to the terminal in your vagrant box and navigate to the location where you cloned the repository and run the below command. This will install all the packages required to run the application.
-
-```
-composer update
-```
 
 * Once this is completed, go to your browser, and type the name of the the application, ```mavbasic.test``` in this example, to access the application on your local machine.
 
