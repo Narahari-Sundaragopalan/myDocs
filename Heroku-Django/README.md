@@ -1,4 +1,4 @@
-# Deploy Django Projects to Heroku (Securely)
+# Deploy Django Projects to Heroku
 
 This is a guide deploy Django Projects on Heroku, securely using Python Decouple. Instead of using the ```settings.py``` file to store all the configuration information and secure keys of APIs, python-decouple provides a secure way of storing the information and deploying on Heroku. Lets get started!
 
