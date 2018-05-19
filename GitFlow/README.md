@@ -43,3 +43,19 @@ git push origin <remoteFeatureBranchName>
 Note: Next time you create a new feature, or any fix, go back to your ```develop``` branch on the local machine, make sure you do a ```git pull``` to pull in latest changes.
 
 * And then follow the same steps from creating a new feature branch and continue.
+
+* Some more helpful commands
+  * Abandon specific file changes in the current branch
+  ```
+  git checkout <fileName1> <fileName2> ...
+  ```
+  
+  * Abandon all changes in all the files in the current branch
+  ```
+  git checkout -f
+  ```
+  
+  * Delete a local branch
+  ```
+  git branch -d <yourLocalBranchNameHere>
+  ```
