@@ -1,5 +1,4 @@
-# CoRA App
-## Flow for Git
+# Flow for Git
 
 * Do the following steps to create feature branches and push code
 
